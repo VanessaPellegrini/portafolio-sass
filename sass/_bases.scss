@@ -8,6 +8,22 @@ nav{
 	background-color: rgba(0,0,0,0);
 	box-shadow: none;
 }
+.navbar-fixed{
+	position: fixed;
+    width: 100%;
+    z-index: 100;
+}
+.navbar-fixed {
+	.logo{
+		font-weight: 100;
+	    font-size: 19px;
+	    margin-left: 7%;
+	    color: white;
+	}
+}
+.btn, .btn-large {
+	background-color:$rosado_btn_nav;
+}
 /*
 .navbar-nav{
 	li:hover{
@@ -17,7 +33,7 @@ nav{
 		}
 	}
 }
-.seccion_unoñ{
+.seccion_uno{
 	background-color:$background_uno;
 	padding-top:$padding;
 	h1, h3{
