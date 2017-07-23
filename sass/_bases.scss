@@ -1,5 +1,12 @@
-*{
+*{	
 	font-family: $body_font;
+}
+body{
+	background-color:#E1E1E1;
+}
+nav{
+	background-color: rgba(0,0,0,0);
+	box-shadow: none;
 }
 /*
 .navbar-nav{
