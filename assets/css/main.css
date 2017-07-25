@@ -6788,7 +6788,8 @@ $width_desktop: 100%;*/
 body {
   background-color: #E1E1E1;
   /*primera caja*/
-  /*segunda Who we are now*/ }
+  /*segunda Who we are now*/
+  /*productos*/ }
   body .team img {
     width: 100%; }
   body section div.container.primera_caja {
@@ -6800,7 +6801,9 @@ body {
     border-top-left-radius: 2em;
     border-top-right-radius: 2em; }
     body section div.container.primera_caja h6.example-text {
-      padding: 8%; }
+      padding: 8%;
+      font-size: 18px;
+      margin-bottom: -30px; }
     body section div.container.primera_caja div i.fa.fa-reorder.center-align, body section div.container.primera_caja i.fa.fa-th-list.center-align, body section div.container.primera_caja i.fa.fa-th.center-align {
       font-size: 45px;
       margin-left: 45%; }
@@ -6816,6 +6819,24 @@ body {
       padding: 15%;
       margin-top: -50px;
       font-size: 16px; }
+  body section div.container.we-are {
+    height: 900px;
+    width: 100%;
+    background-image: url("../img/img_city.jpg");
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #fff; }
+    body section div.container.we-are img.photos {
+      width: 100%; }
+    body section div.container.we-are div.col.m6.caja-texto-we {
+      padding-left: 8%;
+      padding-top: 2%; }
+      body section div.container.we-are div.col.m6.caja-texto-we h2 {
+        font-weight: bold; }
+      body section div.container.we-are div.col.m6.caja-texto-we h5 {
+        font-size: 20px; }
 
 /*navegador*/
 .btn, .btn-large, .btn-large {
@@ -6833,6 +6854,6 @@ nav {
     font-weight: 100;
     font-size: 19px;
     margin-left: 7%;
-    color: white; }
+    color: #fff; }
 
 /*# sourceMappingURL=main.css.map */

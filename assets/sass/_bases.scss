@@ -12,6 +12,8 @@ body{
 
 		h6.example-text{
 			padding: 8%;
+			font-size: 18px;
+			margin-bottom: -30px;
 		}
 		div i.fa.fa-reorder.center-align, i.fa.fa-th-list.center-align, i.fa.fa-th.center-align{
 			font-size: 45px;
@@ -36,7 +38,26 @@ body{
 		}
 	}
 	/*segunda Who we are now*/
-	
+	section div.container.we-are{
+		@include we-are();
+		img.photos{
+			width: 100%;
+		}
+		div.col.m6.caja-texto-we{
+			padding-left: 8%;
+    		padding-top: 2%;
+    		h2{
+    			font-weight: bold;
+    		}
+    		h5{
+    			font-size: 20px;
+    		}
+		}
+	}
+	/*productos*/
+	section div.container.producto{
+		
+	}
 
 }
 /*navegador*/
@@ -51,12 +72,8 @@ nav{
 	position: fixed;
 	width: 100%;
 	z-index: 100;
-
 	.logo{
-		font-weight: 100;
-		font-size: 19px;
-		margin-left: 7%;
-		color: white;
+		@include logo();
 	}
 }
 					
