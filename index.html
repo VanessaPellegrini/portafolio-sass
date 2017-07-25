@@ -16,8 +16,6 @@
 	<script src="https://use.fontawesome.com/e81f3961b0.js"></script>
 	<!-- Materialize Icons -->
 	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-	<!-- Materialize CSS-->
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.99.0/css/materialize.min.css">
 	<!-- Mi CSS-->
 	<link rel="stylesheet" type="text/css" href="assets/css/main.css">
 </head>
@@ -60,56 +58,49 @@
 		    <li><a class="dropdown-txt" href="#!"><i class="fa fa-envelope-o" aria-hidden="true"></i>Contact</a></li>
 		</ul>
 		<!-- Carousel -->
-		<div class="slider estilo-slider">
-		    <ul class="slider-class">
-		      	<li>
-			        <img src="assets/img/img_slider_1.jpg"> 
-			        <div class="caption center-align col m12 s12">
-			          	<h3 class="slider-text-1">Simple & Awesome</h3>
-			          	<h5 class="slider-text-2">Beautiful, elegantly coded</h5>
-			          	<a class="waves-effect waves-light btn boton-see">see more</a>
-			        </div>
-		      	</li>
-		     	<li>
-		        	<img src="assets/img/img_slider_2.jpg">
-			        <div class="caption center-align">
-			          	<h3 class="slider-text-1">Slick Material Design</h3>
-			          	<h5 class="slider-text-2">Beautiful, Elegantly Coded, One-Page WordPress Theme for Business</h5>
-			          	<a class="waves-effect waves-light btn boton-see">see more</a>
-			        </div>
-		      	</li>
-		    </ul>
-		</div>
+		<div class="carousel carousel-slider center" data-indicators="true">
+		    <div class="carousel-fixed-item center">
+		      <a class="btn waves-effect white grey-text darken-text-2">See More</a>
+		    </div>
+		    <div class="carousel-item red white-text" href="#one!">
+		    	<h3 class="slider-text-1">Simple & Awesome</h3>
+			    <h5 class="slider-text-2">Beautiful, elegantly coded</h5>
+		    </div>
+		    <div class="carousel-item amber white-text" href="#two!">
+			    <h3 class="slider-text-1">Slick Material Design</h3>
+			    <h5 class="slider-text-2">Beautiful, Elegantly Coded, One-Page WordPress Theme for Business</h5>
+		    </div>
+		</div>	
 	</nav>
-	<!--video 1-->
-	<section class="z-depth-3 ">
-	<div class="container">
+	<!--iconos-->
+	<section>
+	<div class="container primera_caja">
 	    	<div class="row ">
 	       		<div class="offset-m1 col m10 s12 center-align">
 	        		<h6 class="example-text">Nullam blandit gravida viverra. Etiam turpis erat, sagittis sit amet felis non, porta porta justo. Integer ornare nibh nulla, id pulvinar metus cursus semper. Vivamus dictum pellentesque mi. Vivamus ipsum tellus, mattis non ex sed, semper sodales ligula. Vivamus luctus lorem.</h6>
 	       		</div>
 	     	</div>
 	     	<div class="row">
-	     		<div class="col m4 s12">
-	     			<i class="fa fa-th tamanio-icon icono1 center-align"></i>
-	     			<h5 class="txt-bajoicono center-align">Responsive</h5>
-	     			<p class="example-text-2 center-align">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias eos et doloremque aspernatur.</p>
+	     		<div class="col m4 s12 caja-texto-icono">
+	     			<i class="fa fa-th center-align"></i>
+	     			<h5 class="center-align">Responsive</h5>
+	     			<p class="example-text center-align">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias eos et doloremque aspernatur.</p>
 	     		</div>
-	     		<div class="col m4 s12">
-	     			<i class="fa fa-th-list center-align icono2"></i>
+	     		<div class="col m4 s12 caja-texto-icono">
+	     			<i class="fa fa-th-list center-align"></i>
 	     			<h5 class="center-align">Quality</h5>
-	     			<p class="example-text-2 center-align">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias eos et doloremque aspernatur.</p>
+	     			<p class="example-text center-align">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias eos et doloremque aspernatur.</p>
 	     		</div>
-	     		<div class="col m4 s12">
-	     			<i class="fa fa-reorder center-align icono3"></i>
+	     		<div class="col m4 s12 caja-texto-icono">
+	     			<i class="fa fa-reorder center-align"></i>
 	     			<h5 class="center-align">Support</h5>
 	     			<p class="example-text center-align">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias eos et doloremque aspernatur.</p>
 	     		</div>
 	     	</div>
  	</section>
- 	<!--video 2-->
- 	<section class="video">
- 		<div class="container-fluid">
+ 	<!--Who are we now-->
+ 	<section>
+ 		<div class="container we-are">
  			<div class="row">
 				<div class="col m12 s12 ">
 					<div class="col m6">
@@ -505,13 +496,11 @@
  			</div>
  		</div>
  	</footer>
-</body>
 	<!-- JQuery -->
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 	<!-- Materialize JS-->
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.99.0/js/materialize.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.1/js/materialize.min.js"></script>
 	<!-- Mi JS-->
 	<script type="text/javascript" src="assets/js/main.js"></script>
-	<script type="text/javascript" src="assets/sass/materialize-src/js/carousel.js"></script>
 </body>
 </html>

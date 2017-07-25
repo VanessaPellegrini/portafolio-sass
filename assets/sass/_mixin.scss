@@ -1,5 +1,15 @@
-/*@mixin excel(){
-	color: $color_text_p;
-	text-align:center;
-	line-height: 30px;
-}*/
+@mixin photos(){
+	width: 100%;
+}
+@mixin primera_caja(){
+	height: 500px;
+	margin-top: 270px;
+	background-color: white;
+	position: relative;
+	width: 100%;
+	border-top-left-radius: 2em;
+	border-top-right-radius: 2em;
+}
+@mixin we-are(){
+	
+}

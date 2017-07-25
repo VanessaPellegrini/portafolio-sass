@@ -6782,16 +6782,44 @@ $padding: 6%;
 $padding_media:11%;
 $padding_footer: 2%;
 $width_desktop: 100%;*/
-/*@mixin excel(){
-	color: $color_text_p;
-	text-align:center;
-	line-height: 30px;
-}*/
 * {
   font-family: "Raleway", sans-serif; }
 
 body {
-  background-color: #E1E1E1; }
+  background-color: #E1E1E1;
+  /*primera caja*/
+  /*segunda Who we are now*/ }
+  body .team img {
+    width: 100%; }
+  body section div.container.primera_caja {
+    height: 500px;
+    margin-top: 270px;
+    background-color: white;
+    position: relative;
+    width: 100%;
+    border-top-left-radius: 2em;
+    border-top-right-radius: 2em; }
+    body section div.container.primera_caja h6.example-text {
+      padding: 8%; }
+    body section div.container.primera_caja div i.fa.fa-reorder.center-align, body section div.container.primera_caja i.fa.fa-th-list.center-align, body section div.container.primera_caja i.fa.fa-th.center-align {
+      font-size: 45px;
+      margin-left: 45%; }
+    body section div.container.primera_caja div i.fa.fa-reorder.center-align {
+      color: #E91E63; }
+    body section div.container.primera_caja div i.fa.fa-th-list.center-align {
+      color: #00BCD4; }
+    body section div.container.primera_caja div i.fa.fa-th.center-align {
+      color: green; }
+    body section div.container.primera_caja h5.center-align {
+      font-weight: bold; }
+    body section div.container.primera_caja p.example-text.center-align {
+      padding: 15%;
+      margin-top: -50px;
+      font-size: 16px; }
+
+/*navegador*/
+.btn, .btn-large, .btn-large {
+  background-color: #E91E63; }
 
 nav {
   background-color: rgba(0, 0, 0, 0);
@@ -6801,60 +6829,10 @@ nav {
   position: fixed;
   width: 100%;
   z-index: 100; }
-
-.navbar-fixed .logo {
-  font-weight: 100;
-  font-size: 19px;
-  margin-left: 7%;
-  color: white; }
-
-.btn, .btn-large, .btn-large {
-  background-color: #E91E63; }
-
-/*
-.navbar-nav{
-	li:hover{
-		background-color:$background_uno;
-		a:hover{
-			color:$color_text_titulo;
-		}
-	}
-}
-.seccion_uno{
-	background-color:$background_uno;
-	padding-top:$padding;
-	h1, h3{
-		color:$color_text_titulo;
-		text-align:$text_center;
-	}
-}
-
-.seccion_dos{
-	background-color:$background_dos;
-	padding:$padding_footer;
-	/*para dar estilos predefinidos usando el archivo excel llama a mixnin
-	@include excel();
-}
-.seccion_tres{
-	background-color:$background_dos;
-	padding:$padding_footer;
-	.desktop{
-		width:$width_desktop;
-		padding:$padding;
-	}
-	h1, h2, h4 {
-		text-align: $text_center;
-	}
-	p{
-		@include excel();
-	}
-}
-@media (max-width: 600px){
-	.seccion_uno{
-		background-color:$background_uno;
-		padding-top:$padding_media;
-	}
-}
-*/
+  .navbar-fixed .logo {
+    font-weight: 100;
+    font-size: 19px;
+    margin-left: 7%;
+    color: white; }
 
 /*# sourceMappingURL=main.css.map */

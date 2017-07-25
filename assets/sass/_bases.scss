@@ -1,8 +1,47 @@
-*{	
+*{
 	font-family: $body_font;
 }
 body{
-	background-color:#E1E1E1;
+	background-color: #E1E1E1;
+	.team img{
+		@include photos();
+	}
+	/*primera caja*/
+	section div.container.primera_caja{
+		@include primera_caja();
+
+		h6.example-text{
+			padding: 8%;
+		}
+		div i.fa.fa-reorder.center-align, i.fa.fa-th-list.center-align, i.fa.fa-th.center-align{
+			font-size: 45px;
+    		margin-left: 45%;
+		}
+		div i.fa.fa-reorder.center-align{
+			color: #E91E63;
+		}
+		div i.fa.fa-th-list.center-align{
+			color:#00BCD4;
+		}
+		div i.fa.fa-th.center-align{
+			color: green;
+		}
+		h5.center-align{
+			font-weight: bold;
+		}
+		p.example-text.center-align{
+			padding: 15%;
+    		margin-top: -50px;
+    		font-size: 16px;
+		}
+	}
+	/*segunda Who we are now*/
+	
+
+}
+/*navegador*/
+.btn, .btn-large{
+	background-color: $rosado_btn_nav;
 }
 nav{
 	background-color: rgba(0,0,0,0);
@@ -10,62 +49,15 @@ nav{
 }
 .navbar-fixed{
 	position: fixed;
-    width: 100%;
-    z-index: 100;
-}
-.navbar-fixed {
+	width: 100%;
+	z-index: 100;
+
 	.logo{
 		font-weight: 100;
-	    font-size: 19px;
-	    margin-left: 7%;
-	    color: white;
+		font-size: 19px;
+		margin-left: 7%;
+		color: white;
 	}
 }
-.btn, .btn-large {
-	background-color:$rosado_btn_nav;
-}
-/*
-.navbar-nav{
-	li:hover{
-		background-color:$background_uno;
-		a:hover{
-			color:$color_text_titulo;
-		}
-	}
-}
-.seccion_uno{
-	background-color:$background_uno;
-	padding-top:$padding;
-	h1, h3{
-		color:$color_text_titulo;
-		text-align:$text_center;
-	}
-}
-
-.seccion_dos{
-	background-color:$background_dos;
-	padding:$padding_footer;
-	/*para dar estilos predefinidos usando el archivo excel llama a mixnin
-	@include excel();
-}
-.seccion_tres{
-	background-color:$background_dos;
-	padding:$padding_footer;
-	.desktop{
-		width:$width_desktop;
-		padding:$padding;
-	}
-	h1, h2, h4 {
-		text-align: $text_center;
-	}
-	p{
-		@include excel();
-	}
-}
-@media (max-width: 600px){
-	.seccion_uno{
-		background-color:$background_uno;
-		padding-top:$padding_media;
-	}
-}
-*/
+					
+												
