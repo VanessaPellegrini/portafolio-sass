@@ -70,7 +70,7 @@
   	height: auto;
   	box-shadow: 0 3px 5px rgba(82, 80, 80, 0.85);
 }
-@mixin hide-portafolio(){
+@mixin overlay(){
 	position: absolute;
   	top: 0;
   	bottom: 0;
@@ -162,7 +162,7 @@
     position: relative;
     top: 30px;
     z-index: 1;
-    left: 13%;
+    left: 2%;
     height: 14vh;
     box-shadow: 0px 10px 15px #888888;
     color: white;

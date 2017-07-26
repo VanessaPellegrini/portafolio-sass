@@ -133,13 +133,14 @@ body{
 	section.container.portafolio{
 		@include caja-responsive();
 		div.overlay{
-			@include hide-portafolio();
-			}
+			@include overlay();
+		}
+		
+		.over:hover{
+			opacity: 1;
+		}
 		img{
 			@include imagenes-portafolio();
-		}
-		div.col.s4.overlay:hover{
-			opacity: 1;
 		}
 		h6.center-align{
 			color:#C8C8C8;
@@ -284,6 +285,9 @@ body{
 	section.container.get-in{
 		@include contenedor();
 		@include imagen-get;
+		div.card.white{
+			width:80%;
+		}
 		div.col.s6.caja-texto{
 			color:#fff;
 			padding: 5%;
@@ -298,9 +302,7 @@ body{
 				padding-top: 15px;
 			}
 		}
-		a{
-			margin-left: -80px;
-		}
+
 	}
 	/*footer*/
 	footer.container{
