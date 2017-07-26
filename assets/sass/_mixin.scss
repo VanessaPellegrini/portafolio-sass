@@ -108,3 +108,28 @@
 @mixin caja-texto(){
 	padding: 10%;
 }
+@mixin news-imagen(){
+	background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 90%;
+    left: 5%;
+	top: 260px;
+    
+    background-image: url(../img/about.jpg);
+}
+@mixin oscurecer(){
+	background-color: rgba(40, 43, 43, 0.57);
+	width: 100%;
+	height:100%;
+}
+/**/
+@mixin imagen-get(){
+	background-image:url('../img/img_city.jpg');;
+	background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+	width: 90%;
+    left: 5%;
+	top: 241px;
+}
