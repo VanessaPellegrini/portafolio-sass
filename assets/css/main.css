@@ -6783,6 +6783,7 @@ $padding_media:11%;
 $padding_footer: 2%;
 $width_desktop: 100%;*/
 /*tarjeta*/
+/*portafolio*/
 * {
   font-family: "Raleway", sans-serif; }
 
@@ -6791,7 +6792,8 @@ body {
   /*navegador*/
   /*primera caja*/
   /*segunda Who we are now*/
-  /*productos*/ }
+  /*productos*/
+  /*portafolio*/ }
   body .team img {
     width: 100%; }
   body .btn, body .btn-large, body .btn-large {
@@ -6856,7 +6858,8 @@ body {
         font-size: 20px; }
   body section div.container.productos {
     background-color: #F0F0F0;
-    width: 100%; }
+    width: 100%;
+    height: 100%; }
     body section div.container.productos div.col.m12.s12.caja-text-product {
       margin: 30px; }
     body section div.container.productos h3.center-align {
@@ -6896,5 +6899,33 @@ body {
         font-weight: bold; }
       body section div.container.productos div.card-content p.center-align, body section div.container.productos div.card-content p.left {
         color: #C8C8C8; }
+  body section.container {
+    width: 100%;
+    background-color: #fff;
+    height: 100%;
+    position: relative; }
+    body section.container div.overlay {
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      height: 100%;
+      width: 100%;
+      opacity: 0;
+      transition: .5s ease;
+      background-color: #008CBA; }
+    body section.container img {
+      margin-left: 5%;
+      border-radius: 5px;
+      display: block;
+      width: 90%;
+      height: auto; }
+    body section.container div.col.s4.overlay:hover {
+      opacity: 1; }
+    body section.container h3.center-align {
+      font-weight: bolder; }
+    body section.container h6.center-align {
+      color: #C8C8C8; }
 
 /*# sourceMappingURL=main.css.map */

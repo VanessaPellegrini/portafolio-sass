@@ -52,3 +52,23 @@
 	color: #EC417B;
     font-weight: bolder;
 }
+/*portafolio*/
+@mixin imagenes-portafolio(){
+	margin-left: 5%;
+	border-radius:5px;
+	display: block;
+  	width: 90%;
+  	height: auto;
+}
+@mixin hide-portafolio(){
+	position: absolute;
+  	top: 0;
+  	bottom: 0;
+  	left: 0;
+  	right: 0;
+  	height: 100%;
+  	width: 100%;
+  	opacity: 0;
+  	transition: .5s ease;
+  	background-color: #008CBA;
+}

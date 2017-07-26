@@ -75,6 +75,7 @@ body{
 	section div.container.productos{
 		background-color: #F0F0F0;
 		width: $img-responsive;
+		height: 100%;
 		div.col.m12.s12.caja-text-product{
 			margin: 30px;
 		}
@@ -113,7 +114,29 @@ body{
     		}	
 		}
 	}
-
+	/*portafolio*/
+	section.container{
+		width:$img-responsive;
+		background-color:#fff;
+		height: 100%;
+		position: relative;
+		div.overlay{
+			@include hide-portafolio();
+			}
+		img{
+			@include imagenes-portafolio();
+		}
+		div.col.s4.overlay:hover{
+			opacity: 1;
+		}
+		
+		h3.center-align{
+			font-weight:bolder;
+		}
+		h6.center-align{
+			color:#C8C8C8;
+		}
+	}
 }
 
 					
