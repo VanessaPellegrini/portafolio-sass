@@ -29,7 +29,7 @@
 		       	<li><a href="sass.html" class="menu"><i class="material-icons left">local_mall</i>SHOP</a></li>
 		       	<li><a href="badges.html" class="menu"><i class="material-icons left">edit</i>BLOG</a></li>
 		       	<li><a href="badges.html" class="menu"><i class="material-icons left">email</i>CONTACT</a></li>
-		       	<a class="waves-effect btn-large btn-rosa"><i class="material-icons left">shopping_cart</i>BUY NOW</a>   
+		       	<a class="waves-effect btn-small btn-rosa"><i class="material-icons left">shopping_cart</i>BUY NOW</a>   
 	     	</ul>
 	   </div>
 		<!--navbar-->
@@ -60,14 +60,14 @@
 		<!-- Carousel -->
 		<div class="carousel carousel-slider center" data-indicators="true">
 		    <div class="carousel-fixed-item center">
-		      <a class="btn waves-effect white grey-text darken-text-2">See More</a>
+		      <a class="btn waves-effect darken-text-2">See More</a>
 		    </div>
-		    <div class="carousel-item red white-text" href="#one!">
+		    <div class="carousel-item white-text slider-1" href="#one!">
 		    	<h3 class="slider-text-1">Simple & Awesome</h3>
-			    <h5 class="slider-text-2">Beautiful, elegantly coded</h5>
+			    <h5 class="slider-text-1">Beautiful, elegantly coded</h5>
 		    </div>
-		    <div class="carousel-item amber white-text" href="#two!">
-			    <h3 class="slider-text-1">Slick Material Design</h3>
+		    <div class="carousel-item white-text slider-2" href="#two!">
+			    <h3 class="slider-text-2">Slick Material Design</h3>
 			    <h5 class="slider-text-2">Beautiful, Elegantly Coded, One-Page WordPress Theme for Business</h5>
 		    </div>
 		</div>	
@@ -384,11 +384,14 @@
 	</section>
 	<!-- Subscribe to our Newsletter -->
 	<section class="container newsletter">
-		<div class="row oscurecer">
+		<div class="row">
 			<div class="col s12 caja-email">
 				<h3 class="center-align">Subscribe to our Newsletter</h3>
 				<h6 class="center-align">Receive updates instantly.</h6>
-				<input type="email" placeholder="Your Email Here"><button>SUBSCRIBE</button>
+				<div class="caja-email">
+					<input type="email" placeholder="Your Email Here">
+					<a class="waves-effect waves-light btn-large btn-subscribe">Subscribe</a>
+				</div>
 			</div>		
 		</div>
 	</section>
@@ -424,46 +427,47 @@
 	<!-- Get in Touch -->
 	<section class="container get-in">
 		<div class="row">
-			<div class="col s8 caja-texto">
+			<div class="col s6 caja-texto">
 				<h3>Get in Touch</h3>
 				<p>You need more information? Check what other persons are saying about our product. They are very happy with their purchase.</p>
-				<h4>Find us at the office</h4>
+				<h4> <i class="material-icons">location_on</i> Find us at the office</h4>
 				<small>Bld Mihail Kogalniceanu, nr. 8, 7652 Bucharest, Romania</small>
-				<h4>Find us at the office</h4>
+				<h4> <i class="material-icons">phone_android</i> Find us at the office</h4>
 				<small>Michael Jordan, +40 762 321 762, Mon - Fri, 8:00-22:00</small>
 			</div>
-		</div>
-		<div class="row">
-		    <form class="col s12">
-		    	<div class="row">
-		        	<div class="input-field col s6">
-		          		<input placeholder="Placeholder" id="first_name" type="text" class="validate">
-		          		<label for="first_name">First Name</label>
-		        	</div>
-		        	<div class="input-field col s6">
-		          		<input id="last_name" type="text" class="validate">
-		          		<label for="last_name">Last Name</label>
-		        	</div>
-		      	</div>
-		      	<div class="row">
-		        	<div class="input-field col s12">
-		          		<input id="last_name" type="text" class="validate">
-		          		<label for="last_name">Subject</label>
-		        	</div>
-		      	</div>
-  				<div class="row">
-    				<form class="col s12">
-      					<div class="row">
-        					<div class="input-field col s6">
-          						<i class="material-icons prefix">mode_edit</i>
-          						<textarea id="icon_prefix2" class="materialize-textarea"></textarea>
-          						<label for="icon_prefix2">Your Message</label>
-        					</div>
-      					</div>
-    				</form>
-  				</div>
-		    </form>
-		</div>
+			<div class="col m6 s12">
+	 			<div class="caja-titulo center-align">
+	 				<h5 class="contact">Contact Us</h5>
+	 			</div>
+	 			<div class="card white darken-1">
+			        <div class="card-content white-text">
+			           	<div class="row">
+			            	<div class="col m6">
+			            		<input type="text" placeholder="Your name">
+				            </div>
+				            <div class="col m6">
+				            	<input type="text" placeholder="Your Email">
+				            </div>
+			            </div>
+			            <div class="row">
+			            	<div class="col m12">
+			            		<input type="text" placeholder="Subject">
+			            	</div>
+			            </div>
+			            <div class="row">
+			            	<div class="col m12">
+			            		<textarea placeholder="Your message" id="textarea1" class="materialize-textarea"></textarea>
+			            	</div>
+			            </div>
+			            <div class="row">
+			            	<div class="col m6 right">
+			            		<a class="waves-effect waves-light btn"><p>SEND MESSAGE</p></a>
+			            	</div>
+			            </div>
+			        </div>
+			    </div>
+	 		</div>
+	 	</div>
     </section>	
  	<footer class="container">
  		<div class="row">

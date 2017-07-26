@@ -44,6 +44,11 @@
 	box-shadow: 0 1px 5px rgba(82, 80, 80, 0.85);
 	position: relative;
 	z-index: 10;
+	transition: .3s ease-out;
+    transition-property: initial;
+    transition-duration: 0.3s;
+    transition-timing-function: ease-out;
+    transition-delay: initial;
 }
 @mixin imagen-tarjeta(){
 	width: 80%;
@@ -112,12 +117,12 @@
 	background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    width: 90%;
     left: 5%;
 	top: 260px;
     
     background-image: url(../img/about.jpg);
 }
+/*overlay sombra*/
 @mixin oscurecer(){
 	background-color: rgba(40, 43, 43, 0.57);
 	width: 100%;
@@ -125,11 +130,40 @@
 }
 /**/
 @mixin imagen-get(){
-	background-image:url('../img/img_city.jpg');;
+	background-image:url('../img/img_city.jpg');
 	background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-	width: 90%;
     left: 5%;
 	top: 241px;
+}
+/*slider*/
+@mixin slider-uno(){
+	background-image:url('../img/img_slider_1.jpg');
+	background-size: cover;
+}
+@mixin slider-dos(){
+	background-image:url('../img/img_slider_2.jpg');
+	background-size: cover;
+}
+/*team*/
+@mixin imagen-team(){
+	width:60%;
+	margin: 0 auto;
+	border-radius:10px;
+	box-shadow: 0 3px 5px rgba(82, 80, 80, 0.85);
+	margin-left: 15%;
+}
+/*form-contact*/
+@mixin titulo-formulario(){
+	background-color:$rosado_btn_nav;
+	border-radius: 5px;
+    width: 77%;
+    position: relative;
+    top: 30px;
+    z-index: 1;
+    left: 13%;
+    height: 14vh;
+    box-shadow: 0px 10px 15px #888888;
+    color: white;
 }
