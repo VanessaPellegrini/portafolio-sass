@@ -152,9 +152,9 @@ body{
 	/*Choose a plan for your next project*/
 	section.container.plan-for-you{
 		background-color:#F0F0F0;
-		width: $img-responsive;
-		height:$img-responsive;
+		@include contenedor();
 		padding-top: 30px;
+		padding-bottom: 30px;
 		hr{
 			color:$body_font_color;
 			width: 80%;
@@ -197,6 +197,23 @@ body{
 			b{
 				color:#3C4858;
 			}
+		}
+	}
+	/*our clients*/
+	section.our-clients.container{
+		@include contenedor();
+		background-color: #fff;
+		padding-top:60px;
+		div.caja-texto.center-align{
+			@include caja-texto();
+		}
+		img{
+			width: 30%;
+			margin-left: 33%;
+			margin-top: 10%;
+		}
+		h6{
+			color:#C8C8C8;
 		}
 	}
 }
