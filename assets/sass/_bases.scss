@@ -3,6 +3,9 @@
 }
 body{
 	background-color: #E1E1E1;
+	h3{
+		font-weight: bold;
+	}
 	.team img{
 		@include photos();
 	}
@@ -79,9 +82,6 @@ body{
 		div.col.m12.s12.caja-text-product{
 			margin: 30px;
 		}
-		h3.center-align{
-			font-weight: bold;
-		}
 		h6.center-align{
 			color: $body_font_color;
 			font-size: 26px;
@@ -115,11 +115,8 @@ body{
 		}
 	}
 	/*portafolio*/
-	section.container{
-		width:$img-responsive;
-		background-color:#fff;
-		height: 100%;
-		position: relative;
+	section.container.portafolio{
+		@include caja-responsive();
 		div.overlay{
 			@include hide-portafolio();
 			}
@@ -129,12 +126,77 @@ body{
 		div.col.s4.overlay:hover{
 			opacity: 1;
 		}
-		
-		h3.center-align{
-			font-weight:bolder;
-		}
 		h6.center-align{
 			color:#C8C8C8;
+		}
+	}
+	/*team*/
+	section.container.team{
+		@include caja-responsive();
+		padding-top: 80px;
+		img{
+			width:60%;
+			margin: 0 auto;
+			border-radius:10px;
+			box-shadow: 0 3px 5px rgba(82, 80, 80, 0.85);
+			margin-left: 15%;
+		}
+		h6{
+			color:#C8C8C8;
+		}
+		h4.left-align{
+			font-size: 18px;
+			font-weight: bold;
+		}
+	}
+	/*Choose a plan for your next project*/
+	section.container.plan-for-you{
+		background-color:#F0F0F0;
+		width: $img-responsive;
+		height:$img-responsive;
+		padding-top: 30px;
+		hr{
+			color:$body_font_color;
+			width: 80%;
+		}
+		div.col.s4.text-box-port{
+			padding: 5%;
+			margin-left: 5%;
+		}
+		h2{
+			font-size:26px;
+			font-weight: bolder;
+		}
+		p{
+			color:$body_font_color;
+		}
+		h5{
+			font-size:16px;
+			color:#C8C8C8;
+			margin-top: 40px;
+		}
+		h1{
+			i{
+				font-size:30px;
+			}
+		}
+		div.col.s3.caja-blanca.center-align{
+			@include caja-blanca-choose();
+			button{
+				@include boton-rosado;
+			}
+			b{
+				color:#3C4858;
+			}
+		}
+		div.col.s3.caja-gris.center-align{
+			@include caja-gris-choose();
+			button{
+				@include boton-rosado;
+			}
+			b{
+				color:#3C4858;
+			}
 		}
 	}
 }

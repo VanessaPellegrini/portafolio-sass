@@ -59,6 +59,7 @@
 	display: block;
   	width: 90%;
   	height: auto;
+  	box-shadow: 0 3px 5px rgba(82, 80, 80, 0.85);
 }
 @mixin hide-portafolio(){
 	position: absolute;
@@ -71,4 +72,30 @@
   	opacity: 0;
   	transition: .5s ease;
   	background-color: #008CBA;
+}
+@mixin caja-responsive{
+	width:$img-responsive;
+	background-color:#fff;
+	height: $img-responsive;
+	position: relative;
+
+}
+/*Choose a plan for your next project*/
+@mixin caja-blanca-choose{
+	background-color: white;
+    margin: 2%;
+    padding: 2%;
+    border-radius: 5px;
+}
+@mixin caja-gris-choose{
+    margin: 2%;
+    padding: 2%;
+}
+@mixin boton-rosado{
+	background-color:$rosado_btn_nav;
+	border:none;
+	padding: 10px;
+	border-radius: 5px;
+	color: white;
+	font-weight:bolder;
 }

@@ -6784,6 +6784,7 @@ $padding_footer: 2%;
 $width_desktop: 100%;*/
 /*tarjeta*/
 /*portafolio*/
+/*Choose a plan for your next project*/
 * {
   font-family: "Raleway", sans-serif; }
 
@@ -6793,7 +6794,11 @@ body {
   /*primera caja*/
   /*segunda Who we are now*/
   /*productos*/
-  /*portafolio*/ }
+  /*portafolio*/
+  /*team*/
+  /*Choose a plan for your next project*/ }
+  body h3 {
+    font-weight: bold; }
   body .team img {
     width: 100%; }
   body .btn, body .btn-large, body .btn-large {
@@ -6862,8 +6867,6 @@ body {
     height: 100%; }
     body section div.container.productos div.col.m12.s12.caja-text-product {
       margin: 30px; }
-    body section div.container.productos h3.center-align {
-      font-weight: bold; }
     body section div.container.productos h6.center-align {
       color: #C8C8C8;
       font-size: 26px; }
@@ -6899,12 +6902,12 @@ body {
         font-weight: bold; }
       body section div.container.productos div.card-content p.center-align, body section div.container.productos div.card-content p.left {
         color: #C8C8C8; }
-  body section.container {
+  body section.container.portafolio {
     width: 100%;
     background-color: #fff;
     height: 100%;
     position: relative; }
-    body section.container div.overlay {
+    body section.container.portafolio div.overlay {
       position: absolute;
       top: 0;
       bottom: 0;
@@ -6915,17 +6918,81 @@ body {
       opacity: 0;
       transition: .5s ease;
       background-color: #008CBA; }
-    body section.container img {
+    body section.container.portafolio img {
       margin-left: 5%;
       border-radius: 5px;
       display: block;
       width: 90%;
-      height: auto; }
-    body section.container div.col.s4.overlay:hover {
+      height: auto;
+      box-shadow: 0 3px 5px rgba(82, 80, 80, 0.85); }
+    body section.container.portafolio div.col.s4.overlay:hover {
       opacity: 1; }
-    body section.container h3.center-align {
-      font-weight: bolder; }
-    body section.container h6.center-align {
+    body section.container.portafolio h6.center-align {
       color: #C8C8C8; }
+  body section.container.team {
+    width: 100%;
+    background-color: #fff;
+    height: 100%;
+    position: relative;
+    padding-top: 80px; }
+    body section.container.team img {
+      width: 60%;
+      margin: 0 auto;
+      border-radius: 10px;
+      box-shadow: 0 3px 5px rgba(82, 80, 80, 0.85);
+      margin-left: 15%; }
+    body section.container.team h6 {
+      color: #C8C8C8; }
+    body section.container.team h4.left-align {
+      font-size: 18px;
+      font-weight: bold; }
+  body section.container.plan-for-you {
+    background-color: #F0F0F0;
+    width: 100%;
+    height: 100%;
+    padding-top: 30px; }
+    body section.container.plan-for-you hr {
+      color: #C8C8C8;
+      width: 80%; }
+    body section.container.plan-for-you div.col.s4.text-box-port {
+      padding: 5%;
+      margin-left: 5%; }
+    body section.container.plan-for-you h2 {
+      font-size: 26px;
+      font-weight: bolder; }
+    body section.container.plan-for-you p {
+      color: #C8C8C8; }
+    body section.container.plan-for-you h5 {
+      font-size: 16px;
+      color: #C8C8C8;
+      margin-top: 40px; }
+    body section.container.plan-for-you h1 i {
+      font-size: 30px; }
+    body section.container.plan-for-you div.col.s3.caja-blanca.center-align {
+      background-color: white;
+      margin: 2%;
+      padding: 2%;
+      border-radius: 5px; }
+      body section.container.plan-for-you div.col.s3.caja-blanca.center-align button {
+        background-color: #E91E63;
+        border: none;
+        padding: 10px;
+        border-radius: 5px;
+        color: white;
+        font-weight: bolder; }
+      body section.container.plan-for-you div.col.s3.caja-blanca.center-align b {
+        color: #3C4858; }
+    body section.container.plan-for-you div.col.s3.caja-gris.center-align {
+      margin: 2%;
+      padding: 2%; }
+      body section.container.plan-for-you div.col.s3.caja-gris.center-align button {
+        background-color: #E91E63;
+        border: none;
+        padding: 10px;
+        border-radius: 5px;
+        color: white;
+        font-weight: bolder; }
+      body section.container.plan-for-you div.col.s3.caja-gris.center-align b {
+        color: #3C4858; }
 
 /*# sourceMappingURL=main.css.map */
