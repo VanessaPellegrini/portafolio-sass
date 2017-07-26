@@ -26,6 +26,29 @@
     background-size: cover;
     color: #fff;
 }
-@mixin productos(){
-	
+/*tarjeta*/
+@mixin caja-card(){
+    background-color: white;
+    height: 600px;
+    border-radius: 10px;
+    margin-top: -370px;
+    width: 90%;
+    left: 15px
+}
+@mixin transformar(){
+	transform: translateY(-25px);
+	box-shadow: 0 1px 5px rgba(82, 80, 80, 0.85);
+	position: relative;
+	z-index: 10;
+}
+@mixin imagen-tarjeta(){
+	width: 80%;
+	position: relative;
+   	z-index: 1;
+    top: -20px;
+    left: 30px;
+}
+@mixin parrafo-rosa(){
+	color: #EC417B;
+    font-weight: bolder;
 }

@@ -6782,16 +6782,32 @@ $padding: 6%;
 $padding_media:11%;
 $padding_footer: 2%;
 $width_desktop: 100%;*/
+/*tarjeta*/
 * {
   font-family: "Raleway", sans-serif; }
 
 body {
   background-color: #E1E1E1;
+  /*navegador*/
   /*primera caja*/
   /*segunda Who we are now*/
   /*productos*/ }
   body .team img {
     width: 100%; }
+  body .btn, body .btn-large, body .btn-large {
+    background-color: #E91E63; }
+  body nav {
+    background-color: rgba(0, 0, 0, 0);
+    box-shadow: none; }
+  body .navbar-fixed {
+    position: fixed;
+    width: 100%;
+    z-index: 100; }
+    body .navbar-fixed .logo {
+      font-weight: 100;
+      font-size: 19px;
+      margin-left: 7%;
+      color: #fff; }
   body section div.container.primera_caja {
     height: 500px;
     margin-top: 270px;
@@ -6803,7 +6819,8 @@ body {
     body section div.container.primera_caja h6.example-text {
       padding: 8%;
       font-size: 18px;
-      margin-bottom: -30px; }
+      margin-bottom: -30px;
+      color: #C8C8C8; }
     body section div.container.primera_caja div i.fa.fa-reorder.center-align, body section div.container.primera_caja i.fa.fa-th-list.center-align, body section div.container.primera_caja i.fa.fa-th.center-align {
       font-size: 45px;
       margin-left: 45%; }
@@ -6837,23 +6854,47 @@ body {
         font-weight: bold; }
       body section div.container.we-are div.col.m6.caja-texto-we h5 {
         font-size: 20px; }
-
-/*navegador*/
-.btn, .btn-large, .btn-large {
-  background-color: #E91E63; }
-
-nav {
-  background-color: rgba(0, 0, 0, 0);
-  box-shadow: none; }
-
-.navbar-fixed {
-  position: fixed;
-  width: 100%;
-  z-index: 100; }
-  .navbar-fixed .logo {
-    font-weight: 100;
-    font-size: 19px;
-    margin-left: 7%;
-    color: #fff; }
+  body section div.container.productos {
+    background-color: #F0F0F0;
+    width: 100%; }
+    body section div.container.productos div.col.m12.s12.caja-text-product {
+      margin: 30px; }
+    body section div.container.productos h3.center-align {
+      font-weight: bold; }
+    body section div.container.productos h6.center-align {
+      color: #C8C8C8;
+      font-size: 26px; }
+    body section div.container.productos div.img-productos img {
+      width: 80%;
+      position: relative;
+      z-index: 1;
+      top: -20px;
+      left: 30px; }
+    body section div.container.productos div.card.caja-card {
+      background-color: white;
+      height: 600px;
+      border-radius: 10px;
+      margin-top: -370px;
+      width: 90%;
+      left: 15px; }
+    body section div.container.productos div.img-productos img {
+      border-radius: 10px; }
+    body section div.container.productos div.img-productos img:hover {
+      transform: translateY(-25px);
+      box-shadow: 0 1px 5px rgba(82, 80, 80, 0.85);
+      position: relative;
+      z-index: 10; }
+    body section div.container.productos div.card-content {
+      padding: 24px;
+      padding-top: 370px;
+      border-radius: 0 0 2px 2px; }
+      body section div.container.productos div.card-content p.center-align.rosa {
+        color: #EC417B;
+        font-weight: bolder; }
+      body section div.container.productos div.card-content span.card-title.center-align {
+        font-size: 16px;
+        font-weight: bold; }
+      body section div.container.productos div.card-content p.center-align, body section div.container.productos div.card-content p.left {
+        color: #C8C8C8; }
 
 /*# sourceMappingURL=main.css.map */

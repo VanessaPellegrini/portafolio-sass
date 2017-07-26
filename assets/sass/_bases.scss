@@ -6,6 +6,22 @@ body{
 	.team img{
 		@include photos();
 	}
+	/*navegador*/
+	.btn, .btn-large{
+		background-color: $rosado_btn_nav;
+	}
+	nav{
+		background-color: rgba(0,0,0,0);
+		box-shadow: none;
+	}
+	.navbar-fixed{
+		position: fixed;
+		width: 100%;
+		z-index: 100;
+		.logo{
+			@include logo();
+		}
+	}
 	/*primera caja*/
 	section div.container.primera_caja{
 		@include primera_caja();
@@ -14,6 +30,7 @@ body{
 			padding: 8%;
 			font-size: 18px;
 			margin-bottom: -30px;
+			color: $body_font_color;
 		}
 		div i.fa.fa-reorder.center-align, i.fa.fa-th-list.center-align, i.fa.fa-th.center-align{
 			font-size: 45px;
@@ -55,26 +72,49 @@ body{
 		}
 	}
 	/*productos*/
-	section div.container.producto{
-		
+	section div.container.productos{
+		background-color: #F0F0F0;
+		width: $img-responsive;
+		div.col.m12.s12.caja-text-product{
+			margin: 30px;
+		}
+		h3.center-align{
+			font-weight: bold;
+		}
+		h6.center-align{
+			color: $body_font_color;
+			font-size: 26px;
+		}
+		div.img-productos img{
+			@include imagen-tarjeta();
+		}
+		div.card.caja-card{
+			@include caja-card();
+		}
+		div.img-productos img{
+			border-radius: 10px;
+		}
+		div.img-productos img:hover{
+			@include transformar();
+		}
+		div.card-content{
+			padding: 24px;
+    		padding-top: 370px;
+    		border-radius: 0 0 2px 2px;
+    		p.center-align.rosa{
+    			@include parrafo-rosa();
+    		}
+    		span.card-title.center-align{
+    			font-size: 16px;
+    			font-weight: bold;
+    		}
+    		p.center-align, p.left{
+    			color:#C8C8C8;
+    		}	
+		}
 	}
 
 }
-/*navegador*/
-.btn, .btn-large{
-	background-color: $rosado_btn_nav;
-}
-nav{
-	background-color: rgba(0,0,0,0);
-	box-shadow: none;
-}
-.navbar-fixed{
-	position: fixed;
-	width: 100%;
-	z-index: 100;
-	.logo{
-		@include logo();
-	}
-}
+
 					
 												
